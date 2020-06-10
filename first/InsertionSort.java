@@ -5,9 +5,9 @@ package first;
 // Time Complexity : n^2
 
 public class InsertionSort {
-	public static void main(String[] args) {
-	  int i, j, temp;
-		int[] array = { 10, 1, 5, 8, 7, 6, 4, 3, 2, 9 };
+  public static void main(String[] args) {
+    int i, j, temp;
+    int[] array = { 10, 1, 5, 8, 7, 6, 4, 3, 2, 9 };
 
     for (i = 0 ; i < array.length - 1 ; i++ ) {
       j = i;
@@ -20,9 +20,9 @@ public class InsertionSort {
       }
     }
 
-		for (i = 0 ; i < array.length ; i++)
-			System.out.print(array[i] + " ");
-		System.out.println();
-	}
+    for (i = 0 ; i < array.length ; i++)
+      System.out.print(array[i] + " ");
+    System.out.println();
+  }
 }
 
