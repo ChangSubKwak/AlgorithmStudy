@@ -5,9 +5,9 @@ package first;
 // Time Complexity : n^2
 
 public class BubbleSort {
-	public static void main(String[] args) {
+  public static void main(String[] args) {
     int temp;
-		int[] array = { 2, 5, 9, 4, 1 };
+    int[] array = { 2, 5, 9, 4, 1 };
 
     for (int i = 0 ; i < array.length ; i++ ) {
       for (int j = 0 ; j < array.length - (i + 1) ; j++ ) {
@@ -18,9 +18,9 @@ public class BubbleSort {
         }
       }
     }
-		for (int i = 0 ; i < array.length ; i++)
-			System.out.print(array[i] + " ");
-		System.out.println();
-	}
+    for (int i = 0 ; i < array.length ; i++)
+      System.out.print(array[i] + " ");
+    System.out.println();
+  }
 }
 
