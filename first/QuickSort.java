@@ -13,7 +13,6 @@ public class QuickSort {
 
   public void qsort(int[] data, int start, int end) {
     int pivot = start;
-    //int pivot = (start + end) / 2;
     int left = start + 1, right = end;
 
     //printData(data);
@@ -52,8 +51,7 @@ public class QuickSort {
   public static void main(String[] args) {
     //int[] array = { 10, 1, 5, 8, 7, 6, 4, 3, 2, 9 };
     //int[] array = { 1, 10, 5, 8, 7, 6, 4, 3, 2, 9 };
-    //int[] array = { 1, 5, 4, 2, 3 };
-    int[] array = { 1, 2, 3, 4, 5 };
+    int[] array = { 1, 5, 4, 2, 3 };
 
     QuickSort qs = new QuickSort();
     qs.qsort(array, 0, array.length - 1);
