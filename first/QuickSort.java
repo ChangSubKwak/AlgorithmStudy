@@ -1,7 +1,7 @@
 package first;
 
-// ÀÌ¹Ì Á¤·ÄµÈ ¹è¿­ Á¤·Ä½Ã ºñÈ¿À²ÀûÀÓ
-// Æ¯Á¤ÇÑ °ªÀ» ±âÁØÀ¸·Î Å« ¼ýÀÚ¿Í ÀÛÀº ¼ýÀÚ¸¦ ³ª´©¾î º¸ÀÚ
+// ì´ë¯¸ ì •ë ¬ëœ ë°°ì—´ ì •ë ¬ì‹œ ë¹„íš¨ìœ¨ì ìž„
+// íŠ¹ì •í•œ ê°’ì„ ê¸°ì¤€ìœ¼ë¡œ í° ìˆ«ìžì™€ ìž‘ì€ ìˆ«ìžë¥¼ ë‚˜ëˆ„ì–´ ë³´ìž
 // Time Complexity : O(N * logN)
 
 public class QuickSort {
