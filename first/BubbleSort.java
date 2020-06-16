@@ -1,7 +1,7 @@
 package first;
 
-// ¿·°ú ºñ±³ÇÏ¿© ÀÛÀº °ÍÀ» ¾ÕÀ¸·Î º¸³»ÀÚ
-// ºñ±³¸¦ ¸¹ÀÌÇÔ, Á¦ÀÏ ´À¸²
+// ì˜†ê³¼ ë¹„êµí•˜ì—¬ ìž‘ì€ ê²ƒì„ ì•žìœ¼ë¡œ ë³´ë‚´ìž
+// ë¹„êµë¥¼ ë§Žì´í•¨, ì œì¼ ëŠë¦¼
 // Time Complexity : n^2
 
 public class BubbleSort {
