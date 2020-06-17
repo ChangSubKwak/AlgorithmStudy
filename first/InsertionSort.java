@@ -1,7 +1,7 @@
 package first;
 
-// ÀÌ¹Ì Á¤·ÄµÈ ¹è¿­ Á¤·Ä½Ã È¿À²ÀûÀÓ
-// ÀÌ¹Ì Á¤·ÄµÈ ¹è¿­ÀÇ ÀûÀýÇÑ À§Ä¡¿¡ »ðÀÔÇÏ±â
+// ì´ë¯¸ ì •ë ¬ëœ ë°°ì—´ ì •ë ¬ì‹œ íš¨ìœ¨ì ìž„
+// ì´ë¯¸ ì •ë ¬ëœ ë°°ì—´ì˜ ì ì ˆí•œ ìœ„ì¹˜ì— ì‚½ìž…í•˜ê¸°
 // Time Complexity : n^2
 
 public class InsertionSort {

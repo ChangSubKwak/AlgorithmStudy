@@ -1,6 +1,6 @@
 package first;
 
-// Á¦ÀÏ ÀÛÀº °ÍÀ» ¾ÕÀ¸·Î º¸³»º¸ÀÚ
+// ì œì¼ ì‘ì€ ê²ƒì„ ì•ìœ¼ë¡œ ë³´ë‚´ë³´ì
 // Time Complexity : n^2
 
 public class SelectionSort {
