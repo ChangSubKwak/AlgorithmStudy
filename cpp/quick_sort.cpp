@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <algorithm>
 
-int number, data[10000001]
+int number, data[10000001];
 
 using namespace std;
 
@@ -12,7 +12,7 @@ int main() {
 
   sort(data, data + number);
   for (int i = 0 ; i < number ; i++)
-    printf("%d", &data[i]);
+    printf("%d\n", data[i]);
 
   return 0;
 }
