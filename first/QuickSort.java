@@ -31,7 +31,7 @@ public class QuickSort {
       int temp;
 
       printData(data);
-      //System.out.print("pivot = " + pivot); System.out.print("\tleft = " + left); System.out.print("\tright = " + right + "\n");
+      System.out.print("pivot=" + pivot + " start=" + start + " left=" + left + " end=" + end + " right=" + right + "\n");
       //System.out.print("pivot["  + pivot + "]=" + data[pivot]); 
       //System.out.print("\tleft[" + left  + "]=" + data[left == data.length ? data.length - 1 : left]); 
       //System.out.print("\tright[" + right + "]=" + data[right == -1 ? 0 : right] + "\n"); 
@@ -53,7 +53,8 @@ public class QuickSort {
     //int[] array = { 10, 1, 5, 8, 7, 6, 4, 3, 2, 9 };
     //int[] array = { 1, 10, 5, 8, 7, 6, 4, 3, 2, 9 };
     //int[] array = { 1, 5, 4, 2, 3 };
-    int[] array = { 1, 2, 3, 4, 5 };
+    //int[] array = { 1, 2, 3, 4, 5 };
+    int[] array = { 5, 4, 3, 2, 1 };
 
     QuickSort qs = new QuickSort();
     qs.qsort(array, 0, array.length - 1);
