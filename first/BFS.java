@@ -1,0 +1,49 @@
+package first;
+
+// 1. 큐에서 하나의 노드 값을 꺼내기
+// 2. 해당 노드에 연결된 노드 중 방문하지 않은 노드 방문 및 그 노드의 미 방문 노드 큐에 삽입
+// 방문한 노드를 저장하는 큐, 미방문 노드 저장 큐 가 필요함
+
+import java.util.*;
+
+import java.util.LinkedList;
+
+public class BFS {
+	@SuppressWarnings("unchecked")
+	public static LinkedList<Integer>[] list = new LinkedList[8];
+	public static boolean[] b = new boolean[8];
+	
+	public static void execute(int start) {
+		LinkedList<Integer> l = new LinkedList<Integer>();
+		l.add(start);
+		b[start] = true;
+		
+		while(!l.isEmpty()) {
+			int val = l.poll();
+			System.out.print(val + " ");
+			for(int i = 0 ; i < list[val].size() ; i++) {
+				int val2 = list[val].get(i);
+				if (!b[val2]) {
+					l.add(val2);
+					b[val2] = true;
+				}
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		//@SuppressWarnings("unchecked")	LinkedList<Integer>[] list = new LinkedList[8];
+		for (int i = 0 ; i < 8 ; i++) 
+			list[i] = new LinkedList<Integer>();
+		
+		list[1].add(2);		list[1].add(3);
+		list[2].add(1);		list[2].add(3);		list[2].add(4);		list[2].add(5);
+		list[3].add(1);		list[3].add(2);		list[3].add(6);		list[3].add(7);
+		list[4].add(2);		list[4].add(5);
+		list[5].add(2);		list[3].add(4);
+		list[6].add(3);		list[6].add(7);
+		list[7].add(3);		list[7].add(6);
+		
+		execute(1);
+	}
+}
