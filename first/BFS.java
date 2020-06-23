@@ -11,21 +11,22 @@ import java.util.LinkedList;
 public class BFS {
 	@SuppressWarnings("unchecked")
 	public static LinkedList<Integer>[] list = new LinkedList[8];
-	public static boolean[] b = new boolean[8];
+	public static boolean[] isVisit = new boolean[8];
 	
 	public static void execute(int start) {
+		// 방문해야할 리스트
 		LinkedList<Integer> l = new LinkedList<Integer>();
 		l.add(start);
-		b[start] = true;
+		isVisit[start] = true;
 		
 		while(!l.isEmpty()) {
 			int val = l.poll();
 			System.out.print(val + " ");
 			for(int i = 0 ; i < list[val].size() ; i++) {
 				int val2 = list[val].get(i);
-				if (!b[val2]) {
+				if (!isVisit[val2]) {
 					l.add(val2);
-					b[val2] = true;
+					isVisit[val2] = true;
 				}
 			}
 		}
