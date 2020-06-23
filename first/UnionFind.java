@@ -1,5 +1,8 @@
 package first;
 
+// 부모를 작은 값으로 세팅
+// 두 부모를 확인하여 같은 집합에 속하는지 확인
+
 public class UnionFind {
 	public void unionParent(int[] parent, int node1, int node2) {
 	  int p1 = getParent(parent, node1);
