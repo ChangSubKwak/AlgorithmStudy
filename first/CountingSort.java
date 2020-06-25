@@ -1,7 +1,7 @@
 package first;
 
 // 인덱스를 기준으로 갯수를 세기
-// Time Complexity : O(N * logN)
+// Time Complexity : O(N)
 
 public class CountingSort {
   public static void main(String[] args) {
