@@ -10,7 +10,7 @@ import java.util.LinkedList;
 
 public class BFS {
 	@SuppressWarnings("unchecked")
-	public static LinkedList<Integer>[] list = new LinkedList[8];
+	public static LinkedList<Integer>[] list = new LinkedList[8]; // 그래프를 표현한 리스트
 	public static boolean[] isVisit = new boolean[8];  // 방문여부 체크 배열
 	
 	public static void execute(int start) {
