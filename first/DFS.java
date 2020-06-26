@@ -12,19 +12,14 @@ public class DFS {
 	public static boolean[] isVisit = new boolean[8];  // 방문여부 체크 배열
 	
 	public static void execute(int start) {
-		// 방문해야할 리스트
-		Stack<Integer> stack = new Stack<Integer>();
+	  if (isVisit[start]) return;
+	  isVisit[start] = true;
 
-		stack.add(start);
-		isVisit[start] = true;
-		for(int i = 0 ; i < list[start].size() ; i++) {
-      int val2 = list[val1].get(i);
-      if (!isVisit[val2]) {
-      	stack.add(val2);
-        isVisit[val2] = true;
-		    break;
-			}
-		}
+	  System.out.print(start + " ");
+	  for(int i = 0 ; i < list[start].size() ; i++) {
+	    int nextNode = list[start].get(i);
+	    execute(nextNode);
+    }
 	}
 	
 	public static void main(String[] args) {
@@ -41,5 +36,6 @@ public class DFS {
 		list[7].add(3);		list[7].add(6);
 		
 		execute(1);
+		System.out.println();
 	}
 }
