@@ -20,10 +20,10 @@ public class BFS {
 		isVisit[start] = true;
 		
 		while(!l.isEmpty()) {
-			int val = l.poll();
-			System.out.print(val + " ");
-			for(int i = 0 ; i < list[val].size() ; i++) {
-				int val2 = list[val].get(i);
+			int val1 = l.poll();
+			System.out.print(val1 + " ");
+			for(int i = 0 ; i < list[val1].size() ; i++) {
+				int val2 = list[val1].get(i);
 				if (!isVisit[val2]) {
 					l.add(val2);
 					isVisit[val2] = true;
