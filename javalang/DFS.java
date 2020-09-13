@@ -21,7 +21,7 @@ public class DFS {
             int nextNode = list[start].get(i);
             execute(nextNode);
         }
-	}
+    }
 	
 	public static void main(String[] args) {
 		//@SuppressWarnings("unchecked")	LinkedList<Integer>[] list = new LinkedList[8];

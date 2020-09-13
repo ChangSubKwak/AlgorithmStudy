@@ -45,6 +45,6 @@ public class UnionFind {
         System.out.println(uf.isSameParent(parent, 1, 4));
         System.out.println(uf.isSameParent(parent, 2, 3));
         System.out.println(uf.isSameParent(parent, 1, 5));
-	}
+    }
 }
 
