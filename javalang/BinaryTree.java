@@ -32,8 +32,8 @@ public class BinaryTree {
 		}
 
 		for(int i = 1 ; i < node.length ; i++) {
-            if (i%2 == 0) node[i/2].left = node[i];
-            else          node[i/2].right = node[i];
+		    if (i%2 == 0) node[i/2].left = node[i];
+		    else          node[i/2].right = node[i];
         }
 		
 		/*
