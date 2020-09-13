@@ -14,14 +14,14 @@ public class DFS {
 	public static void execute(int start) {
 	    if (isVisit[start])
 	        return;
-	    isVisit[start] = true;
+		isVisit[start] = true; 
 
-        System.out.print(start + " ");
-        for(int i = 0 ; i < list[start].size() ; i++) {
-            int nextNode = list[start].get(i);
-            execute(nextNode);
-        }
-    }
+		System.out.print(start + " ");
+		for(int i = 0 ; i < list[start].size() ; i++) {
+			int nextNode = list[start].get(i);
+			execute(nextNode);
+		}
+	}
 	
 	public static void main(String[] args) {
 		//@SuppressWarnings("unchecked")	LinkedList<Integer>[] list = new LinkedList[8];
