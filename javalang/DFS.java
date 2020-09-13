@@ -1,4 +1,4 @@
-package first;
+package javalang;
 
 // 1. 큐에서 하나의 노드 값을 꺼내기
 // 2. 해당 노드에 연결된 노드 중 방문하지 않은 노드 방문 및 그 노드의 미 방문 노드 스택에 삽입
@@ -12,15 +12,15 @@ public class DFS {
 	public static boolean[] isVisit = new boolean[8];  // 방문여부 체크 배열
 	
 	public static void execute(int start) {
-	  if (isVisit[start])
-	    return;
-	  isVisit[start] = true;
+        if (isVisit[start])
+            return;
+        isVisit[start] = true;
 
-	  System.out.print(start + " ");
-	  for(int i = 0 ; i < list[start].size() ; i++) {
-	    int nextNode = list[start].get(i);
-	    execute(nextNode);
-    }
+        System.out.print(start + " ");
+        for(int i = 0 ; i < list[start].size() ; i++) {
+            int nextNode = list[start].get(i);
+            execute(nextNode);
+        }
 	}
 	
 	public static void main(String[] args) {

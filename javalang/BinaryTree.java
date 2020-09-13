@@ -1,4 +1,4 @@
-package first;
+package javalang;
 
 public class BinaryTree {
 	
@@ -32,9 +32,9 @@ public class BinaryTree {
 		}
 
 		for(int i = 1 ; i < node.length ; i++) {
-		  if (i%2 == 0) node[i/2].left = node[i];
-      else          node[i/2].right = node[i];
-    }
+            if (i%2 == 0) node[i/2].left = node[i];
+            else          node[i/2].right = node[i];
+        }
 		
 		/*
 		node[1].left = node[2];		node[1].right = node[3];

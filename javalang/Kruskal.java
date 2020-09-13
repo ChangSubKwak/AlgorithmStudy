@@ -1,4 +1,4 @@
-package first;
+package javalang;
 
 //최소 비용 신장 트리 만들기
 //1. 거리를 기준으로 간선을 오름차순 정렬
