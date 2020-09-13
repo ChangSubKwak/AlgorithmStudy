@@ -12,8 +12,8 @@ public class DFS {
 	public static boolean[] isVisit = new boolean[8];  // 방문여부 체크 배열
 	
 	public static void execute(int start) {
-	    if (isVisit[start])
-	        return;
+		if (isVisit[start])
+			return;
 		isVisit[start] = true; 
 
 		System.out.print(start + " ");
